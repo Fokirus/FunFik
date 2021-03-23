@@ -1,0 +1,41 @@
+<div class="modal-block-authorization authblock modal-container ui-dialog-content ui-widget-content" id="authblock" data-controller="authblock" data-action="authblock" style="display: block; width: auto; min-height: 0px; max-height: none; height: auto; text-align: center;">
+  <header style="height: 80px; padding-top: 15px; user-select: none; text-align: center;">
+    <div class="dialog-title" style="position: relative; text-align: center;">
+      <div class="title-dialog" style="font-size: 24px; font-weight: 400; line-height: 22px; text-align: center;">Registration</div>
+    </div>
+  </header>
+  <article>
+    <form method="post" id="loginForm" style="margin: 0;">
+      <div class="div" style="height: 36px; margin-bottom: 24px;">
+        <input type="text" class="form-control" name="username" [(ngModel)]="username" id="username" placeholder="Login" data-original-title="" title="" autocomplete="off" autocorrect="off" autocapitalize="off" style="padding: 10px;">
+      </div>
+      
+      <div class="div" style="height: 36px; margin-bottom: 24px;">
+        <input type="email" name="email" [(ngModel)]="email" id="email" class="email" placeholder="Email" data-original-title="" title="" autocomplete="off" autocorrect="off" autocapitalize="off" style="padding: 10px;">
+      </div>
+
+      <div class="div" style="height: 36px; margin-bottom: 24px;">
+        <input type="password" name="password" [(ngModel)]="password"  id="password" class="password" placeholder="Password" data-original-title="" title="" autocomplete="off" autocorrect="off" autocapitalize="off" style="padding: 10px;">
+      </div>
+     
+      <div class="card-container">
+        <div class="card card-small" style="width: 20rem; height: 0px; position: unset;" (click)="onClickRegistration()" tabindex="0">
+          <span><font color="black">Registration</font></span>
+        </div>
+      </div>
+    </form>
+  </article>
+       
+  <div class="card-container" style="background-color: #f6f7f8;">
+    <a class="circle-link" title="Gmail" style="background-color: #df2e2e;" href="https://accounts.google.com/o/" target="_blank" rel="noopener">
+      <h1 style="color: #f6f7f8;">G</h1>
+    </a>
+       
+    <a class="circle-link" title="VK" style="background-color: #40638c;" href="http://oauth.vk.com/">
+      <h3 style="color: #f6f7f8;">VK</h3>
+    </a>
+    <a class="circle-link" title="Yandex" style="background-color: #e7312b;" href="https://oauth.yandex.ru/">
+      <h1 style="color: #f6f7f8;">Y</h1>  
+    </a>
+  </div>
+</div>

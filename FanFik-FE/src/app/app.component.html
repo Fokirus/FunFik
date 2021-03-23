@@ -1,0 +1,39 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<!-- Toolbar -->
+<div class="toolbar" style="height: 40px; " role="banner">
+  <span>Fun-fik origin</span>
+  <div class="spacer"></div>
+    
+  <div class="search">
+    <form method="post" class="search_header" role="search">
+      <div class="search-wrap icon-search">
+        <input type="text" name="story" id="search" placeholder="What are we looking for?" autocomplete="off" style="padding: 10px;">
+        <input type="hidden" name="do" value="search">
+        <input type="hidden" name="simple" value="1">
+        <input type="hidden" name="subaction" value="search">
+        <input class="f_submited" type="submit" value="Search" style="padding: 10px;">
+      </div>
+    </form>
+    <div class="searchResults"></div>
+  </div>
+  
+  <div class="card-container">
+    <div class="card" style="width: 9rem; height: 0px; position: unset;" (click)="openRegistrationDialog()" tabindex="0">
+      <span><font color="black">Create an account</font></span>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card" style="width: 7rem; height: 0px; position: unset;" (click)="openLoginDialog()" tabindex="0">
+      <span><font color="black">Authorization</font></span>
+    </div>
+  </div>
+</div>
